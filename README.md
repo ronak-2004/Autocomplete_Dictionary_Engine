@@ -3,7 +3,7 @@
 # Autocomplete Trie (C++)
 
 A small command-line autocomplete suggestion tool using a Trie data structure.
-Supports insert, search, delete, list suggestions sorted by frequency, and load from file.
+Supports insert, search, delete, list suggestions sorted by frequency, and load from the file.
 
 ## Build
 g++ -std=c++17 -O2 src/autocomplete_trie.cpp -o autocomplete
