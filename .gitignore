@@ -1,0 +1,6 @@
+/autocomplete
+*.o
+*.exe
+.vscode/
+build/
+*.log
