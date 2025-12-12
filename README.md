@@ -1,3 +1,5 @@
+![Windows Build](https://github.com/ronak-2004/Autocomplete_Dictionary_Engine/actions/workflows/cpp-windows.yml/badge.svg)
+
 # Autocomplete Trie (C++)
 
 A small command-line autocomplete suggestion tool using a Trie data structure.

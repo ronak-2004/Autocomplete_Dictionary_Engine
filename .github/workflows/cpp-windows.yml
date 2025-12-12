@@ -1,0 +1,30 @@
+name: Windows C++ build
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Install MinGW
+      uses: egor-tensin/setup-mingw@v2
+      with:
+        platform: 64
+    
+    - name: Verify compiler
+      run: g++ --version
+    
+    - name: Build project (Windows)
+      run: g++ -std=c++17 src/autocomplete.cpp -o autocomplete.exe
+    
+    - name: Run basic test
+      run: |
+        echo search | ./autocomplete.exe
+
